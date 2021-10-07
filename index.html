@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/style.css" rel="stylesheet">
+    <title>minesweeper</title>
+</head>
+
+<body onload="init()">
+    <button class="music" onclick="playMusic()">🎧</button>
+    <h1>Minesweeper Game</h1>
+
+    <section class="container-Hints-clue-lives">
+        <ul class="hints">
+            <li onclick="hintBtb(0)">💡</li>
+            <li onclick="hintBtb(1)">💡</li>
+            <li onclick="hintBtb(2)">💡</li>
+        </ul>
+        <ul class="saveBtn">
+            <li onclick="saveBtn(0)">😇</li>
+            <li onclick="saveBtn(1)">😇</li>
+            <li onclick="saveBtn(2)">😇</li>
+        </ul>
+    </section>
+    <section class="modal">
+        <h2>You Win !</h2>
+        <button class="restartBtn" onclick="init()">Restart</button>
+    </section>
+
+    <!-- <div class="boom">
+            <div class="eyes"></div>
+            <div class="heat"></div>
+        </div> -->
+    <section class="timer-container">
+        <div class="timer">Time: <span>00</span></div>
+    </section>
+
+
+    <div class="buttons">
+        <button onclick="setLevel(0)">Beginner</button>
+        <button onclick="setLevel(1)">Medium</button>
+        <button onclick="setLevel(2)">Expert</button>
+    </div>
+
+
+    <div class="board-container">
+    </div>
+
+    <footer>
+        <h4>&copy;Noy Shabo</h4>
+    </footer>
+    <script src="./js/util.js"></script>
+    <script src="./js/board.js"></script>
+
+</body>
+
+</html>
